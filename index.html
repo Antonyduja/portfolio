@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>personel portfolio website - beta</title>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/0eaae03184.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.jpeg" class="logo">
+            <ul>
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">about</a></li>
+                <li><a href="#services">services</a></li>
+                <li><a href="#portfolio">portfolio</a></li>
+                <li><a href="#contact">contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-text">
+            <p>Full Stack Developer</p>
+            <h1>Hi, I am<span> Rishro</span><br> from India</br></h1>
+        </div>
+    </div>
+</div>
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user (2).jpeg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-titles">About me</h1>
+                <p>I am an enthusiastic, self-motivated, reliable, responsible and hard working person. 
+                    I am a mature team worker and adaptable to all challenging situations. 
+                    I am able to work well both in a team environment as well as using own initiative. 
+                    I am able to work well under pressure and adhere to strict deadlines.
+                </p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('Education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="Skills">
+                    <ul>
+                        <li><span>Full stack</span><br>Developing websites</li>
+                        <li><span>Web development</span><br>Developing web apps</li>
+                        <li><span>App development</span><br>Developing websites</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Experience">
+                    <ul>
+                        <li><span>2021-current</span><br>Developing websites training at IIT</li>
+                        <li><span>2019-2021</span><br>Team lead at startup LLC</li>
+                        <li><span>2017-2018</span><br>Internship at google</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Education">
+                    <ul>
+                        <li><span>2016</span><br>Developing websites training at IIT institude</li>
+                        <li><span>2016</span><br>MBA from MIT Bangalore</li>
+                        <li><span>2014</span><br>BBA from Bangalore</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="services">
+    <div class="container">
+        <h1 class="sub-titles">My services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>Providing top-notch web designing services to help you build a strong 
+                   online presence and achieve your digital goals.
+                </p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-code-branch"></i>
+                <h2>Full stack development</h2>
+                <p>Comprehensive full-stack development services for your 
+                   digital success
+                </p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-codepen"></i>
+                <h2>Data Analysing</h2>
+                <p>Unlock the power of data with our comprehensive data analysis services, 
+                   make informed decisions, and fuel your business growth.
+                </p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-titles">My work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work 1.jpeg">
+                <div class="layer">
+                    <h3>Social media app</h3>
+                    <p>the app connect you to the talented people around the world.
+                        Download it from play store. </p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work2.jpeg">
+                <div class="layer">
+                    <h3>Music app</h3>
+                    <p>the app allows you to listen the songs
+                        of your favourote artists.s </p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+            </div>   
+        </div>
+    </div>
+    <a href="#" class="btn">See more</a>
+</div>
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>rishroj@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>1234567890</p>
+                <div class="social-icons">
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-square-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="images/my-cv.pdf" download class="btn btn2">Download cv</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your email" required>
+                    <textarea name="Message" rows="16" placeholder="Your message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright @Rishro, Made with <i class="fas fa-heart"></i> by Rishro</p>
+    </div>
+</div>
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classlist.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tablink.classlist.remove("active-tab");
+        }
+        event.currentTarget.classlist.add("active-link");
+        document.getElementById(tabname).classlist.add("active-tab");
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbx-0IReOBMX91Wzhsdra1TKOSxU92vdR5ddbKChvhTS_VvfSZfaelzEowPQGgjMeFjx/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent succcesfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000 )
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
